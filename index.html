@@ -3,128 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Managing Director & Software Engineer</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --bg-color: #f8f9fa;
-            --text-color: #333;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        section {
-            margin-bottom: 3rem;
-        }
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 0.5rem;
-            display: inline-block;
-        }
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-        .project-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-top: 4px solid var(--secondary-color);
-        }
-        .project-card h3 {
-            margin-top: 0;
-            color: var(--primary-color);
-        }
-        .contact-info {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-        a {
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Jaeed Mahmud Nuhin - Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <h1>[Your Name]</h1>
-        <p>Managing Director / Country Head & Software Engineer</p>
-        <p>📍 Rajshahi, Bangladesh</p>
-    </header>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a technology leader and software engineer with a deep interest in building robust systems and exploring advanced computer science concepts. My expertise spans across organizational leadership, software development methodologies, and technical domains including compiler design and networking (dynamic routing, IP addressing).</p>
-        </section>
-
-        <section id="projects">
-            <h2>Current Projects & Research</h2>
-            <div class="project-grid">
-                
-                <div class="project-card">
-                    <h3>B2B Meal Catering Software</h3>
-                    <p>Architecting and developing a comprehensive software product to scale an existing meal catering service. Implementing proper software engineering methodologies from the ground up to support a growing customer base.</p>
+    <div class="layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="profile-preview">
+                <div class="avatar" style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1.5rem auto; overflow: hidden; border: 3px solid var(--accent); box-shadow: 0 0 20px var(--accent-glow);">
+                    <img src="port.jpeg" alt="Jaeed Mahmud Nuhin" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-
-                <div class="project-card">
-                    <h3>Object Detection Research</h3>
-                    <p>Conducting in-depth analysis of IEEE conference papers focused on object detection algorithms. Evaluating state-of-the-art methodologies by analyzing citation impacts and reviewing associated open-source codebases.</p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Network Infrastructure & Routing</h3>
-                    <p>Applied research and academic exploration into advanced networking concepts, including default gateways, IP addressing architecture, and dynamic routing protocols.</p>
-                </div>
-
+                <h2>Jaeed Mahmud Nuhin</h2>
+                <p>Computer Science Engineer</p>
             </div>
-        </section>
-
-        <section id="contact">
-            <h2>Get In Touch</h2>
+            
             <div class="contact-info">
-                <p>Feel free to connect with me to discuss software architecture, organizational leadership, or potential collaborations.</p>
-                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-                <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+                <div class="contact-item"><i class="fa-solid fa-envelope"></i> nuhin6paths@gmail.com</div>
+                <div class="contact-item"><i class="fa-solid fa-phone"></i> +8801304271095</div>
+                <div class="contact-item"><i class="fa-solid fa-location-dot"></i> Rajshahi, Bangladesh</div>
+                <div class="contact-item"><i class="fa-brands fa-github"></i> <a href="https://github.com/JMNuhin" target="_blank" class="contact-link">github.com/JMNuhin</a></div>
             </div>
-        </section>
+            
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About Me</a>
+                <a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
+                <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+                <a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a>
+            </nav>
+
+            <div class="language-skills">
+                <h3>Languages</h3>
+                <div class="lang-item"><span>Bengali</span> <span>Native</span></div>
+                <div class="lang-item"><span>English</span> <span>Fluent</span></div>
+                <div class="lang-item"><span>Japanese</span> <span>Beginner</span></div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            
+            <!-- Hero Section -->
+            <section id="about" class="section hero-section">
+                <h1 class="greeting">Hi, I'm <span class="highlight">Jaeed Mahmud Nuhin</span>.</h1>
+                <h2 class="subtitle">B.Sc. in Computer Science & Engineering</h2>
+                <p class="bio">
+                    I am learning AI engineering and very interested to make AI do things by developing AI models, optimizing them and deploying. My goal is to develop project focused coding agents and computer vision pipelines for autonomous UAV agents.
+                </p>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="section">
+                <h2 class="section-title">Academic Background</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>B.Sc. in Computer Science and Engineering</h3>
+                        <div class="company">Rajshahi University of Engineering and Technology (RUET)</div>
+                        <div class="duration">2022 – 2026 (Expected: Aug 15, 2026)</div>
+                        <p><strong>CGPA:</strong> 3.36 / 4.00 (Up to 7th Semester)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Embedded System Engineer (Intern)</h3>
+                        <div class="company">Frontier Semiconductor Bangladesh</div>
+                        <div class="duration">Duration: 2 weeks (7th Semester)</div>
+                        <p><strong>Technologies:</strong> C++, STM32, STM32Cube IDE, FPGA</p>
+                        <p>Completed internship under Industrial Attachment Coursework at RUET, focusing on embedded systems and FPGA hardware programming.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <div class="tags">
+                            <span class="tag">Python (B)</span>
+                            <span class="tag">C (C)</span>
+                            <span class="tag">C++ (C)</span>
+                            <span class="tag">Go (D)</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <div class="tags">
+                            <span class="tag">Django (B)</span>
+                            <span class="tag">React (D)</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Database & Others</h3>
+                        <div class="tags">
+                            <span class="tag">Verilog (B)</span>
+                            <span class="tag">MySQL (D)</span>
+                            <span class="tag">MS Office (B)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <h2 class="section-title">Projects</h2>
+                
+                <h3 style="margin-top: 1rem; margin-bottom: 1rem; color: var(--text-secondary);">Professional Projects</h3>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Custom UART Protocol on FPGA</h3>
+                        <div class="tags">
+                            <span class="tag">Verilog</span>
+                            <span class="tag">FPGA</span>
+                        </div>
+                        <p>An FPGA-based UART implementation using Verilog which sends and receives 8-bit data between a PC and an FPGA.</p>
+                        <p style="margin-top: 1rem;"><strong>Role:</strong> Verilog Programmer (Team of 6)</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 3rem; margin-bottom: 1rem; color: var(--text-secondary);">Academic & Personal Projects</h3>
+                <div class="grid">
+                    <div class="card">
+                        <h3>minzaniX (Flight Controller)</h3>
+                        <div class="tags">
+                            <span class="tag">C / C++</span>
+                            <span class="tag">AirSim</span>
+                        </div>
+                        <p>A compact flight controller core designed for autonomous agents. It wraps low-level flight control modules (estimator, controller, mixer) and integrates seamlessly with Microsoft AirSim for realistic simulations or runs in stub-mode without requiring actual hardware.</p>
+                        <p style="margin-top: 1rem;"><strong>Role:</strong> Developer (Solo)</p>
+                        <div class="card-actions" style="margin-top: 1rem;">
+                            <a href="https://github.com/JMNuhin/minzaniX" target="_blank" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i class="fa-brands fa-github"></i> View Repository</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>STM32 Digital Clock</h3>
+                        <div class="tags">
+                            <span class="tag">C</span>
+                            <span class="tag">STM32</span>
+                            <span class="tag">RTC</span>
+                        </div>
+                        <p>A digital clock built using a Real-Time Clock (RTC) implementation on an STM32 BluePill microcontroller. It features a 4x4 keypad for user input and interfaces directly with an LCD1602 display for accurate timekeeping.</p>
+                        <p style="margin-top: 1rem;"><strong>Role:</strong> Embedded Developer</p>
+                        <div class="card-actions" style="margin-top: 1rem;">
+                            <a href="https://github.com/JMNuhin/Clock" target="_blank" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i class="fa-brands fa-github"></i> View Repository</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Travel Mate</h3>
+                        <div class="tags">
+                            <span class="tag">Django REST</span>
+                            <span class="tag">React.js</span>
+                        </div>
+                        <p>A ride-sharing web application that groups passengers based on the same destination, starting point, and date to reduce per-person costs.</p>
+                        <p style="margin-top: 1rem;"><strong>Role:</strong> Backend Developer (Solo Project)</p>
+                        <div class="card-actions" style="margin-top: 1rem;">
+                            <a href="https://github.com/JMNuhin/TravelMate" target="_blank" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i class="fa-brands fa-github"></i> View Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
     </div>
 
+    <script>
+        // Smooth scrolling for sidebar links
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Sidebar Active State on Scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
